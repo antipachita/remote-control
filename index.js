@@ -4,7 +4,7 @@ import { createWebSocketStream } from 'ws';
 import readable from './source/readble-stream/readble-stream.js'
 
 const HTTP_PORT = 3000;
-const WSS_PORT = 8080;
+const WSS_PORT = 8000;
 
 httpServer.listen(HTTP_PORT).on('listening', () => {
     console.log(`Start static http server on the ${HTTP_PORT} port!`)
