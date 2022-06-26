@@ -8,7 +8,7 @@ const WSS_PORT = 8000;
 
 httpServer.listen(HTTP_PORT).on('listening', () => {
     console.log(`Start static http server on the ${HTTP_PORT} port!`)
-  })
+});
 
 export const wss = new WebSocketServer({ port: WSS_PORT })
 wss.on('connection', function(){
@@ -20,4 +20,4 @@ wss.on('connection', function(){
     
     socketStream.on('readable', readable(socketStream))
   }
-}())
+}());
